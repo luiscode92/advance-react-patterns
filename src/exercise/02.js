@@ -20,10 +20,10 @@ function Toggle() {
 // 🐨 Flesh out each of these components
 
 // Accepts `on` and `children` props and returns `children` if `on` is true
-const ToggleOn = () => null
+const ToggleOn = ({on,children}) => on ? children : null
 
 // Accepts `on` and `children` props and returns `children` if `on` is false
-const ToggleOff = () => null
+const ToggleOff = ({on, children}) => on ? null : children
 
 // Accepts `on` and `toggle` props and returns the <Switch /> with those props.
 const ToggleButton = () => null
